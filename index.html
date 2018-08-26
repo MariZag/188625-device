@@ -12,7 +12,11 @@
           <img src="img/logo-black.svg" width="164" height="36" alt="Логотип интернет-магазина Device">
         </a>
 
-        <!-- Здесь будет строка поиска -->
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <label for="search" class="visually-hidden">Поиск по сайту</label>
+          <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+          <button class="btn-search" type="submit">Найти</button>
+        </form>
 
         <ul class="user-navigation">
           <li class="login-link"><a href="#">Войти</a></li>
@@ -20,7 +24,7 @@
           <li class="basket-link"><a href="#">Корзина</a></li>
         </ul>
         <ul class="site-navigation">
-          <li><a>Каталог товаров</a>
+          <li><a href="#">Каталог товаров</a>
             <ul class="catalog-navigation">
               <li>
                 <ul>
@@ -61,7 +65,7 @@
               <div class="slider-item-info">
                 <p>Делай селфи, как Бен Стиллер!</p>
                 <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                <a class="button">Подробнее</a>
+                <a href="#" class="button">Подробнее</a>
                 <table class="slider-item-table">
                   <tr>
                     <th>Длина палки</th>
@@ -83,7 +87,7 @@
               <div class="slider-item-info">
                 <p>Худеем правильно!</p>
                 <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                <a class="button">Подробнее</a>
+                <a href="#" class="button">Подробнее</a>
                 <table class="slider-item-table">
                   <tr>
                     <th>Без подзарядки</th>
@@ -101,7 +105,7 @@
               <div class="slider-item-info">
                 <p>Порхает как бабочка, жалит как пчела!</p>
                 <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-                <a class="button">Подробнее</a>
+                <a href="#" class="button">Подробнее</a>
                 <table class="slider-item-table">
                   <tr>
                     <th>Дальность полета</th>
@@ -114,6 +118,11 @@
                 </table>
               </div>
             </li>
+          </ul>
+          <ul class="slider-btn-list">
+            <li><button type="button" class="slider-button"></button></li>
+            <li><button type="button" class="slider-button"></button></li>
+            <li><button type="button" class="slider-button"></button></li>
           </ul>
         </section>
 
@@ -145,13 +154,13 @@
           <h2 class="visually-hidden">Услуги</h2>
           <ul class="services-list">
             <li class="services-item">
-              <button>Доставка</button>
+              <button type="button">Доставка</button>
             </li>
             <li class="services-item">
-              <button>Гарантия</button> 
+              <button type="button">Гарантия</button> 
             </li>
             <li class="services-item">
-              <button>Кредит</button>
+              <button type="button">Кредит</button>
             </li>
           </ul>
           <ul class="services-list-info">
@@ -239,11 +248,25 @@
     </footer>
 
     <section class="modal modal-write">
-      <!-- Здесь будет форма -->
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+        <label for="email">Ваш e-mail:</label>
+        <input type="text" id="email" name="email" placeholder="email@example.com">
+        <label for="message">Текст письма:</label>
+        <textarea id="message" placeholder="В свободной форме"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+      <button class="close-modal" type="button">Закрыть</button>
     </section>
 
     <section class="modal modal-map">
-      <!-- Здесь будет форма -->
+      <h2 class="visually-hidden">Где мы находимся</h2>
+      <p>
+        <img src="img/map-big.jpg" width="960" height="559" alt="Офис расположен по адресу г. Москва, ул. Строителей, 15">
+      </p>
+      <button class="close-modal" type="button">Закрыть</button> 
     </section>
 
   </body>

@@ -12,7 +12,11 @@
           <img src="img/logo-black.svg" width="164" height="36" alt="Логотип интернет-магазина Device">
         </a>
 
-        <!-- Здесь будет строка поиска -->
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <label for="search" class="visually-hidden">Поиск по сайту</label>
+          <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+          <button class="btn-search" type="submit">Найти</button>
+        </form>
 
         <ul class="user-navigation">
           <li class="login-link"><a href="#">Валентин Петухов</a></li>
@@ -54,7 +58,51 @@
         <div class="catalog-wrapper">
           <section class="filters">
             <h2>Фильтр:</h2>
-            <!-- Здесь будет форма -->
+            <form action="https://echo.htmlacademy.ru" method="GET">
+              <fieldset>
+                <legend>Стоимость</legend>
+                <!-- Здесь будет фиьтр по стоимости -->
+              </fieldset>
+              <fieldset>
+                <legend>Цвет</legend>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="color-black" name="black" checked>
+                    <label for="color-black">Черный</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="color-white" name="white">
+                    <label for="color-white">Белый</label>
+                  </li>
+                  <li>
+                      <input type="checkbox" id="color-blue" name="blue" checked>
+                      <label for="color-blue">Синий</label>
+                  </li>
+                  <li>
+                      <input type="checkbox" id="color-red" name="red" checked>
+                      <label for="color-red">Красный</label>
+                  </li>
+                  <li>
+                      <input type="checkbox" id="color-pink" name="pink">
+                      <label for="color-pink">Розовый</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                  <legend>Bluetooth</legend>
+                  <ul>
+                    <li>
+                      <input type="radio" id="bluetooth-yes" name="bluetooth-yes" checked>
+                      <label for="bluetooth-yes">Есть</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="bluetooth-no" name="bluetooth-yes">
+                        <label for="bluetooth-no">Нет</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <button type="submit">Показать</button>
+            </form>
           </section>
 
           <section class="catalog">
