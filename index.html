@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин Device</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -14,7 +17,7 @@
 
         <form action="https://echo.htmlacademy.ru" method="GET">
           <label for="search" class="visually-hidden">Поиск по сайту</label>
-          <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+          <input type="search" name="search" id="search" class="search-field" placeholder="Поиск по сайту">
           <button class="btn-search" type="submit">Найти</button>
         </form>
 
@@ -63,8 +66,8 @@
                 <img src="img/slider-1.png" width="384" height="486" alt="Палка для селфи">
               </div>
               <div class="slider-item-info">
-                <p>Делай селфи, как Бен Стиллер!</p>
-                <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <p class="slider-title">Делай селфи, как Бен Стиллер!</p>
+                <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                 <a href="#" class="button">Подробнее</a>
                 <table class="slider-item-table">
                   <tr>
@@ -85,8 +88,8 @@
                 <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
               </div>
               <div class="slider-item-info">
-                <p>Худеем правильно!</p>
-                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                <p class="slider-title">Худеем правильно!</p>
+                <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
                 <a href="#" class="button">Подробнее</a>
                 <table class="slider-item-table">
                   <tr>
@@ -103,8 +106,8 @@
                 <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
               </div>
               <div class="slider-item-info">
-                <p>Порхает как бабочка, жалит как пчела!</p>
-                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                <p class="slider-title">Порхает как бабочка, жалит как пчела!</p>
+                <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                 <a href="#" class="button">Подробнее</a>
                 <table class="slider-item-table">
                   <tr>
@@ -154,13 +157,13 @@
           <h2 class="visually-hidden">Услуги</h2>
           <ul class="services-list">
             <li class="services-item">
-              <button type="button">Доставка</button>
+              <button type="button" class="services-btn">Доставка</button>
             </li>
             <li class="services-item">
-              <button type="button">Гарантия</button> 
+              <button type="button" class="services-btn">Гарантия</button> 
             </li>
             <li class="services-item">
-              <button type="button">Кредит</button>
+              <button type="button" class="services-btn">Кредит</button>
             </li>
           </ul>
           <ul class="services-list-info">
