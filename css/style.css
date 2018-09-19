@@ -29,7 +29,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    min-width: 1160px;
+    min-width: 1200px;
 
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 15px;
@@ -45,9 +45,24 @@ a {
     text-decoration: none;
 }
 
-.main-navigation {
+/* .main-navigation {
     color: #000000;
     background-color: #f7e296;
+} */
+
+.main-header {
+    color: #000000;
+    background-color: #f7e296;
+}
+
+.main-header a.logo:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.main-header a.logo:active {
+    opacity: 0.3;
+    cursor: pointer;
 }
 
 .search-field {
@@ -331,6 +346,12 @@ a {
 
 h2.section-title {
     background-color: #dcdcdc;  
+    position: relative;
+}
+
+.section-title::before  {
+    position: absolute;
+    content: ""
 }
 
 .color-choice,
@@ -483,24 +504,52 @@ h2.section-title {
 
 /* Построение сетки */
 
-.main-header {
+/* .main-header {
     width: 1160px;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
 
     outline: 1px green solid; 
-}
+} */
 
-.logo {
-    padding-left: 60px;
+.container {
+    width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
 
     outline: 1px green solid; 
 }
 
+.main-header {
+    position: relative;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 35px;
+    margin-top: 40px; 
+    min-height: 186px;
+
+    outline: 1px green solid; 
+}
+
+.main-header a.logo {
+    display: block;
+    position: absolute;
+    top: -19px;
+
+    outline: 1px green solid; 
+}
+
+.main-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .search-form {
     width: 440px;
-    margin-right: auto;
+    /* margin-right: auto; */
     padding-left: 60px;
 
     outline: 1px green solid; 
@@ -512,45 +561,66 @@ h2.section-title {
     padding: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     
     outline: 1px green solid; 
 }
 
 .user-navigation .login-link {
     width: 260px;
+
+    outline: 1px green solid; 
+}
+
+.user-navigation .logout-link {
+    opacity: 0.3;
+
+    outline: 1px green solid; 
 }
 
 .user-navigation .compare-link,
 .user-navigation .basket-link {
     width: 90px;
-}
-
-.site-navigation {
-    width: 1040px;
-    margin: 0;
-    padding: 0;
-    display: flex;
 
     outline: 1px green solid; 
 }
 
-.catalog-navigation {
+.site-navigation {
+    /* width: 1040px; */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    outline: 1px green solid; 
+}
+
+.navigation-item:first-child{
     width: 540px;
+    position: relative;
 
     outline: 1px green solid; 
 }
 
 .navigation-item:nth-child(2) {
     width: 160px;
+
+    outline: 1px green solid; 
 }
 
 .navigation-item:nth-child(3) {
     width: 120px;
+
+    outline: 1px green solid; 
 }
 
 .navigation-item:nth-child(4) {
     width: 120px;
     margin-left: auto;
+
+    outline: 1px green solid; 
 }
 
 .main-content {
@@ -558,7 +628,6 @@ h2.section-title {
 }
 
 .slider {
-    width: 1160px;
     margin: 0 auto;
     margin-bottom: 85px;
 
@@ -585,7 +654,6 @@ h2.section-title {
 }
 
 .category {
-    width: 1160px;
     margin: 0 auto;
     margin-bottom: 85px;
 
@@ -631,7 +699,6 @@ h2.section-title {
 }
 
 .brands {
-    width: 1160px;
     margin: 0 auto;
     margin-bottom: 85px;
 
@@ -648,7 +715,6 @@ h2.section-title {
 }
 
 .info-wrapper {
-    width: 1160px;
     margin: 0 auto;
     margin-bottom: 85px;
     display: flex;
@@ -672,7 +738,6 @@ h2.section-title {
 }
 
 .footer-top {
-    width: 1160px;
     display: flex;
     justify-content: space-between;
 
@@ -685,7 +750,6 @@ h2.section-title {
 }
 
 .footer-middle {
-    width: 1160px;
     display: flex;
     justify-content: space-between;
 
@@ -698,7 +762,6 @@ h2.section-title {
 }
 
 .footer-bottom  {
-    width: 1160px;
     display: flex;
     justify-content: space-between;
 
@@ -707,13 +770,6 @@ h2.section-title {
 
 .footer-social {
     display: flex;
-    outline: 1px green solid;
-}
-
-.container {
-    width: 1160px;
-    margin: 0 auto;
-
     outline: 1px green solid;
 }
 
@@ -741,6 +797,7 @@ h2.section-title {
 .filters {
    width: 330px; 
    padding-left: 60px;
+   padding-right: 68px;
 
    outline: 1px green solid;
 }
@@ -764,10 +821,10 @@ h2.section-title {
 }
 
 .product-list {
-    width: 760px;
+    /* width: 800px; */
     margin: 0;
     padding: 0;
-    padding-left: 70px;
+    padding-left: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -778,6 +835,9 @@ h2.section-title {
 .product-item {
     display: flex;
     flex-direction: column;
+    width: 360px;
+    margin-left: 40px;
+    margin-bottom: 46px;
 
     outline: 1px green solid;
 }
