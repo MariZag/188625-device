@@ -1360,4 +1360,40 @@ input[type="search"]:focus~.btn-search {
     opacity: 0.3;
 } 
 
+.filters {
+    position: relative;
+}
+
+.filters::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: #eeeeee;
+    z-index: -10;
+}
+
+.user-sort {
+    position: relative;
+}
+
+.user-sort::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: #eeeeee;
+    z-index: -10;
+}
+
+.product-list {
+    margin-top: 70px;
+}
+
+.pagination-list {
+    margin-bottom: 78px;
+}
+
 
